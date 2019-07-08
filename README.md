@@ -34,7 +34,8 @@ What do you reasonably think you can implement in the allotted time period? Reas
 
 What are your reach goals?-my reach goals are to have the auth landing page open for different users, have display content custom to each user. Have a add canidate page(user can add canidate not currently on app), have Java work for the backend.
 
-* **Wireframes:** What does MVP look like? -MVP is landing page, canidate page and canidates I follow page up and running. API works seemlessly, design done and output responds as directed
+* **Wireframes:** What does MVP look like? -MVP is landing page, canidate page and canidates I follow page up and running. API works seemlessly, design done and output responds as directed.
+
 Sketch out what your core pages will look like and how they will work. Consider making a *paper prototype* to demonstrate and/or test key user interactions.
 
 * **Data Models:** Draw out the models and any associations for your project in an entity relationship diagram (ERDs).
