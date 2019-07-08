@@ -44,7 +44,8 @@ Sketch out what your core pages will look like and how they will work. Consider 
 
 ### Completed Project Deliverables
 
-- A **working API**, hosted somewhere on the internet- https://newsapi.org/v2/top-headlines?sources=google-news&apiKey=722391b8a06d4099ad3f1a39b6ab915e 
+- A **working API**, hosted somewhere on the internet- 
+https://newsapi.org/v2/top-headlines?sources=google-news&apiKey=722391b8a06d4099ad3f1a39b6ab915e 
 
 https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=722391b8a06d4099ad3f1a39b6ab915e
 - A handmade front-end **that consumes your own API**, hosted somewhere on the internet
