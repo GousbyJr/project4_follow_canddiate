@@ -44,7 +44,9 @@ Sketch out what your core pages will look like and how they will work. Consider 
 
 ### Completed Project Deliverables
 
-- A **working API**, hosted somewhere on the internet- https://newsapi.org/v2/top-headlines?sources=google-news&apiKey=722391b8a06d4099ad3f1a39b6ab915e , https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=722391b8a06d4099ad3f1a39b6ab915e
+- A **working API**, hosted somewhere on the internet- https://newsapi.org/v2/top-headlines?sources=google-news&apiKey=722391b8a06d4099ad3f1a39b6ab915e 
+
+https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=722391b8a06d4099ad3f1a39b6ab915e
 - A handmade front-end **that consumes your own API**, hosted somewhere on the internet
 - A **link to your hosted working app** in the URL section of your Github repo
 - A link to your **repository hosted on Github Enterprise**, with a link to your hosted project, and frequent commits dating back to the _very beginning_ of the project
