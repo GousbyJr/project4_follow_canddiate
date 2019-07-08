@@ -40,6 +40,8 @@ Sketch out what your core pages will look like and how they will work. Consider 
 
 * **Data Models:** Draw out the models and any associations for your project in an entity relationship diagram (ERDs).
 
+https://www.lucidchart.com/documents/edit/f559448f-43b2-47fd-981d-6bbbb3f380a2/0?beaconFlowId=F715981C4240D9B7
+
 * **Milestones:** Outline the milestones/sprints in GitHub Project.
 
 ### Completed Project Deliverables
