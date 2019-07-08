@@ -38,6 +38,8 @@ What are your reach goals?-my reach goals are to have the auth landing page open
 
 Sketch out what your core pages will look like and how they will work. Consider making a *paper prototype* to demonstrate and/or test key user interactions.
 
+https://res.cloudinary.com/diqd6zflz/raw/upload/v1562608747/P4_WIREFRAME_jt2ro0.rp
+
 * **Data Models:** Draw out the models and any associations for your project in an entity relationship diagram (ERDs).
 
 https://www.lucidchart.com/documents/edit/f559448f-43b2-47fd-981d-6bbbb3f380a2/0?beaconFlowId=F715981C4240D9B7
