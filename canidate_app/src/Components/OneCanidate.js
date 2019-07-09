@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Canidate extends Component {
+class OneCanidate extends Component {
     render() {
         return (
             <div>
@@ -10,4 +10,4 @@ class Canidate extends Component {
     }
 }
 
-export default Canidate;
+export default OneCanidate;
