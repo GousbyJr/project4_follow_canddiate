@@ -9,9 +9,9 @@ You are **responsible** for scheduling time with your squad to seek approval for
 |  Day | Deliverable | Status
 |---|---| ---|
 |Jul 8| Project Description | Complete
-|Jul 8| Wireframes / Priority Matrix / Functional Components | Complete
-|Jul 9| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|Jul 9| Pseudocode / actual code | Incomplete
+|Jul 8| Wireframes / Priority Matrix / Functional Components | Wireframes complete/Functional Components-in progress
+|Jul 9| Core Application Structure (React, Rails,  etc.) | In progress
+|Jul 9| Pseudocode / actual code | In progress
 |Jul 10| Initial Clickable Model  | Incomplete
 |Jul 11| MVP | Incomplete
 |Jul 15| Present | Incomplete
@@ -42,9 +42,12 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Adding Canidate Form | H | 3hrs| 2 hrs | --hrs |
+|Building functional components| H| 6hrs| --hrs|--hrs
+|Building Auth| H | 12hrs|8hrs|--
+| Working with API | H | 8hrs| -- hrs | -- hrs |
+|Work on CSS|M| 8 hrs| --hrs| --hrs
+| Total | H | 38hrs| --hrs | --hrs |
 
 
 ## Additional Libraries
