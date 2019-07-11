@@ -1,0 +1,222 @@
+import {
+    createNewCanidate,
+    readAllCanidates,
+    updateCanidate,
+    destroyCanidate,
+    loginUser,
+    registerUser
+} from './services/api_helper'
+
+class App extends Component {
+  constructor(props){
+  super(props);
+  this.state = {
+    canidates: [],
+    canidateBio: {
+      name: "",
+      politicalParty: "",
+      photo: "",
+      bio: ""
+    },
+    currentUser: null,
+    authFormData: {
+      username:"",
+      email: "",
+      password: ""
+    }
+  };
+  this.handleFormChange = this.handleFormChange.bind(this)
+    this.mountEditForm = this.mountEditForm.bind(this)
+    this.deleteCanidate = this.deleteCanidate.bind(this)
+    this.newCanidate = this.newCanidate.bind(this)
+    this.handleLoginButton = this.handleLoginButton.bind(this)
+    this.handleLogin = this.handleLogin.bind(this)
+    this.handleRegister = this.handleRegister.bind(this)
+    this.handleLogout = this.handleLogout.bind(this)
+    this.authHandleChange = this.authHandleChange.bind(this)
+}
+componentDidMount() {
+  this.getCanidates();
+  const checkUser = localStorage.getItem("jwt");
+  if (checkUser) {
+    const user = decode(checkUser);
+    this.setState({
+      currentUser: user
+    })
+  }
+}
+
+async getCanidates() {
+  const canidates = await readAllCanidates();
+  this.setState({
+    canidates
+  })
+}
+
+async newCanidate(e) {
+  e.preventDefault();
+  const teacher = await createNewCanidate(this.state.canidateForm);
+  this.setState(prevState => ({
+    canidates: [...prevState.teachers, teacher],
+    canidateBio: {
+      name: "",
+      politicalParty: "",
+      photo: "",
+      bio: ""
+    }
+  }))
+}
+
+async deleteCanidate(id) {
+  await destroyCanidate(id);
+  this.setState(prevState => ({
+    canidates: prevState.canidates.filter(canidate => canidate.id !== id)
+  }))
+}
+
+handleFormChange(e) {
+  const { name, value } = e.target;
+  this.setState(prevState => ({
+    canidateBio: {
+      ...prevState.canidateBio,
+      [name]: value
+    }
+  }))
+}
+
+async mountEditForm(id) {
+  const canidates = await readAllCanidates();
+  const canidate = canidates.find(el => el.id === parseInt(id));
+  this.setState({
+    canidateBio: canidate
+  });
+}
+handleLoginButton() {
+  this.props.history.push("/signin")
+}
+
+async handleLogin() {
+  const userData = await loginUser(this.state.authFormData);
+  this.setState({
+    currentUser: decode(userData.token)
+  })
+  localStorage.setItem("jwt", userData.token)
+}
+
+async handleRegister(e) {
+  e.preventDefault();
+  await registerUser(this.state.authFormData);
+  this.handleLogin();
+}
+
+handleLogout() {
+  localStorage.removeItem("jwt");
+  this.setState({
+    currentUser: {}
+  })
+}
+
+handleSignUp = async (data)=> {
+  const res = await axios.post('http://localhost:3001/users', data)
+  const {token} = res.data
+  localStorage.setItem("jwt", token)
+
+  this.setState({
+    currentUser: decode(token)
+  })
+}
+authHandleChange(e) {
+  const { name, value } = e.target;
+  this.setState(prevState => ({
+    authFormData: {
+      ...prevState.authFormData,
+      [name]: value
+    }
+  }));
+}
+
+  render() {
+    const{currentUser} = this.state;
+    const userIsLoggedIn = currentUser.user_id
+    return (
+      <Router>
+      <div className="App">
+      <header>
+        <h1><Link to='/' onClick={() => this.setState({
+          canidateBio: {
+            name: "",
+            politicalParty: "",
+            photo: "",
+            bio: ""
+          }
+        })}>iCanidate</Link></h1>
+        <div>
+        {this.state.currentUser
+        ?
+        <div>
+          <p>{this.state.currentUser.username}</p>
+          <button onClick={this.handleLogout}>Sign In</button>
+          </div>
+          :
+          <div>
+          <button onClick={this.handleLoginButton}>Sign In</button>
+          <button onClick={this.handleRegister}>Register</button>
+           </div>
+        }
+        </div>
+      </header>
+      <Route exact path="/" render={()=> (
+        <SignIn
+          handleLogin={this.handleLogin}
+          handleChange={this.authHandleChange}
+          formData={this.state.authFormData} />)} />
+
+        <Route 
+        exact path="/register" render={() => (
+          <Register
+            handleRegister={this.handleRegister}
+            handleChange={this.authHandleChange}
+            formData={this.state.authFormData} />)} />
+
+          <Route
+          exact path="/canidates"
+          render={() => (
+            <AllCanidates
+              canidates={this.state.canidates}
+              canidateBio={this.state.canidateBio}
+              handleFormChange={this.handleFormChange}
+              newCanidate={this.newCanidate} />
+          )}
+        />
+          <Route
+          path="/new/canidate"
+          render={() => (
+            < AddNewCanidate
+              handleFormChange={this.handleFormChange}
+              canidateBio={this.state.canidateBio}
+              newCanidate={this.newCanidate} />
+          )} />
+       <Route
+          path="/canidates/:id"
+          render={(props) => {
+            const { id } = props.match.params;
+            const canidate = this.state.canidates.find(el => el.id === parseInt(id));
+            return <OneCanidate
+              id={id}
+              canidate={canidate}
+              handleFormChange={this.handleFormChange}
+              mountEditForm={this.mountEditForm}
+              canidateBio={this.state.canidateBio}
+              deleteCanidate={this.deleteCanidate} />
+          }}
+        />
+      </div>
+      </Router>
+    );
+  }
+}
+
+
+
+
+export default App;
