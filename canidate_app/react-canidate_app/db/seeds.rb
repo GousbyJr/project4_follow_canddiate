@@ -18,7 +18,7 @@ Canidate.create!(name: 'John Hickenlooper', photo: 'https://uploads.concordia.ne
 Canidate.create!(name: 'Jay Inslee', photo: 'http://www.governor.wa.gov/sites/default/files/images/Governor%20Jay%20Inslee%20Official%20Portrait.jpg')
 Canidate.create!(name: 'Amy Klobuchar', photo: 'https://upload.wikimedia.org/wikipedia/commons/f/f9/Amy_Klobuchar.jpg')
 Canidate.create!(name: 'Wayne Messam', photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Mayor_Messam.jpg/1200px-Mayor_Messam.jpg')
-Canidate.create!(name: 'Beto O'Rourke, photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Beto_O%27Rourke%2C_Official_portrait%2C_113th_Congress.jpg/1200px-Beto_O%27Rourke%2C_Official_portrait%2C_113th_Congress.jpg')
+Canidate.create!(name: 'Beto O Rourke', photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Beto_O%27Rourke%2C_Official_portrait%2C_113th_Congress.jpg/1200px-Beto_O%27Rourke%2C_Official_portrait%2C_113th_Congress.jpg')
 Canidate.create!(name: 'Tim Ryan', photo: 'https://upload.wikimedia.org/wikipedia/commons/6/6d/Rep._Tim_Ryan_Congressional_Head_Shot_2010.jpg')
 Canidate.create!(name: 'Bernie Sanders', photo: 'http://networthcelebrities.com/wp-content/uploads/2015/11/Bernie-Sanders_6.jpg')
 Canidate.create!(name: 'Eric Swalwell', photo: 'https://swalwell.house.gov/sites/swalwell.house.gov/files/wysiwyg_uploaded/ES%20Official%20Photo%20114th.jpg')

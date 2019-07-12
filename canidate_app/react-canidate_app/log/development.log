@@ -215,3 +215,384 @@ Processing by AuthenticationController#login as HTML
 Completed 401 Unauthorized in 251ms (Views: 0.6ms | ActiveRecord: 0.9ms)
 
 
+Started POST "/auth/login" for ::1 at 2019-07-12 13:42:51 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"password"=>"[FILTERED]", "username"=>"gousbyt", "authentication"=>{"password"=>"[FILTERED]", "username"=>"gousbyt"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gousbyt"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17
+Completed 401 Unauthorized in 249ms (Views: 1.3ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-07-12 13:42:54 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"password"=>"[FILTERED]", "username"=>"gousbyt", "authentication"=>{"password"=>"[FILTERED]", "username"=>"gousbyt"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gousbyt"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17
+Completed 401 Unauthorized in 244ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-07-12 13:42:55 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"password"=>"[FILTERED]", "username"=>"gousbyt", "authentication"=>{"password"=>"[FILTERED]", "username"=>"gousbyt"}}
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gousbyt"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17
+Completed 401 Unauthorized in 253ms (Views: 0.3ms | ActiveRecord: 3.3ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-07-12 13:42:55 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"password"=>"[FILTERED]", "username"=>"gousbyt", "authentication"=>{"password"=>"[FILTERED]", "username"=>"gousbyt"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gousbyt"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17
+Completed 401 Unauthorized in 288ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-07-12 13:42:55 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"password"=>"[FILTERED]", "username"=>"gousbyt", "authentication"=>{"password"=>"[FILTERED]", "username"=>"gousbyt"}}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gousbyt"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17
+Completed 401 Unauthorized in 306ms (Views: 0.2ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-07-12 13:43:13 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"password"=>"[FILTERED]", "username"=>"gousbyt", "authentication"=>{"password"=>"[FILTERED]", "username"=>"gousbyt"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gousbyt"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17
+Completed 401 Unauthorized in 255ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-07-12 13:43:14 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"password"=>"[FILTERED]", "username"=>"gousbyt", "authentication"=>{"password"=>"[FILTERED]", "username"=>"gousbyt"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gousbyt"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17
+Completed 401 Unauthorized in 255ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-07-12 13:43:14 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"password"=>"[FILTERED]", "username"=>"gousbyt", "authentication"=>{"password"=>"[FILTERED]", "username"=>"gousbyt"}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gousbyt"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17
+Completed 401 Unauthorized in 285ms (Views: 0.2ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-07-12 13:43:14 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"password"=>"[FILTERED]", "username"=>"gousbyt", "authentication"=>{"password"=>"[FILTERED]", "username"=>"gousbyt"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gousbyt"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17
+Completed 401 Unauthorized in 296ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-07-12 13:54:48 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"password"=>"[FILTERED]", "username"=>"gousbyt", "authentication"=>{"password"=>"[FILTERED]", "username"=>"gousbyt"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gousbyt"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17
+Completed 401 Unauthorized in 241ms (Views: 0.3ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-07-12 13:55:00 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"password"=>"[FILTERED]", "username"=>"gousbyt", "authentication"=>{"password"=>"[FILTERED]", "username"=>"gousbyt"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gousbyt"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17
+Completed 401 Unauthorized in 243ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2447684976624732705)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateCanidates (20190712181852)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (69.0ms)[0m  [1m[35mCREATE TABLE "canidates" ("id" bigserial primary key, "name" character varying, "party" character varying, "string" character varying, "bio" character varying, "photo" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190712181852_create_canidates.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190712181852"]]
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(2447684976624732705)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started POST "/auth/login" for ::1 at 2019-07-12 14:21:14 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by AuthenticationController#login as HTML
+  Parameters: {"password"=>"[FILTERED]", "username"=>"gousbyt", "authentication"=>{"password"=>"[FILTERED]", "username"=>"gousbyt"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gousbyt"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17
+Completed 401 Unauthorized in 274ms (Views: 0.2ms | ActiveRecord: 4.6ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-07-12 14:21:15 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"password"=>"[FILTERED]", "username"=>"gousbyt", "authentication"=>{"password"=>"[FILTERED]", "username"=>"gousbyt"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gousbyt"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17
+Completed 401 Unauthorized in 282ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-07-12 14:21:15 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"password"=>"[FILTERED]", "username"=>"gousbyt", "authentication"=>{"password"=>"[FILTERED]", "username"=>"gousbyt"}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gousbyt"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17
+Completed 401 Unauthorized in 257ms (Views: 0.2ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-07-12 14:21:16 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"password"=>"[FILTERED]", "username"=>"gousbyt", "authentication"=>{"password"=>"[FILTERED]", "username"=>"gousbyt"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gousbyt"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17
+Completed 401 Unauthorized in 256ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-07-12 15:22:53 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by AuthenticationController#login as HTML
+  Parameters: {"password"=>"[FILTERED]", "username"=>"gousbyt", "authentication"=>{"password"=>"[FILTERED]", "username"=>"gousbyt"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gousbyt"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17
+Completed 401 Unauthorized in 268ms (Views: 0.2ms | ActiveRecord: 4.3ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-07-12 15:22:53 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"password"=>"[FILTERED]", "username"=>"gousbyt", "authentication"=>{"password"=>"[FILTERED]", "username"=>"gousbyt"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gousbyt"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17
+Completed 401 Unauthorized in 309ms (Views: 0.2ms | ActiveRecord: 3.6ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-07-12 15:22:54 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"password"=>"[FILTERED]", "username"=>"gousbyt", "authentication"=>{"password"=>"[FILTERED]", "username"=>"gousbyt"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gousbyt"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17
+Completed 401 Unauthorized in 248ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-07-12 15:23:22 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"password"=>"[FILTERED]", "username"=>"gousbyt", "authentication"=>{"password"=>"[FILTERED]", "username"=>"gousbyt"}}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gousbyt"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17
+Completed 401 Unauthorized in 246ms (Views: 0.2ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-07-12 15:23:58 -0400
+Processing by AuthenticationController#login as */*
+  Parameters: {"username"=>"gousbyt", "password"=>"[FILTERED]", "authentication"=>{"username"=>"gousbyt", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gousbyt"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17
+Completed 200 OK in 266ms (Views: 0.2ms | ActiveRecord: 2.9ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-07-12 15:24:12 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"password"=>"[FILTERED]", "username"=>"gousbyt", "authentication"=>{"password"=>"[FILTERED]", "username"=>"gousbyt"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gousbyt"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:17
+Completed 200 OK in 247ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/allcanidates" for ::1 at 2019-07-12 15:30:19 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/allcanidates"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/canidates" for ::1 at 2019-07-12 15:31:03 -0400
+Processing by CanidatesController#index as HTML
+  [1m[36mCanidate Load (304.1ms)[0m  [1m[34mSELECT "canidates".* FROM "canidates"[0m
+  ↳ app/controllers/canidates_controller.rb:8
+Completed 200 OK in 331ms (Views: 5.1ms | ActiveRecord: 320.3ms)
+
+
+Started GET "/canidates" for ::1 at 2019-07-12 15:31:15 -0400
+Processing by CanidatesController#index as HTML
+  [1m[36mCanidate Load (0.5ms)[0m  [1m[34mSELECT "canidates".* FROM "canidates"[0m
+  ↳ app/controllers/canidates_controller.rb:8
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.5ms)
+
+
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mCanidate Create (11.1ms)[0m  [1m[32mINSERT INTO "canidates" ("name", "photo", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Cory Booker"], ["photo", "https://media1.fdncms.com/clevescene/imager/u/slideshow/4981594/corybooker.jpg"], ["created_at", "2019-07-12 19:31:47.704611"], ["updated_at", "2019-07-12 19:31:47.704611"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mCanidate Create (0.5ms)[0m  [1m[32mINSERT INTO "canidates" ("name", "photo", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Kamala Harris"], ["photo", "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Senator_Harris_official_senate_portrait.jpg/1200px-Senator_Harris_official_senate_portrait.jpg"], ["created_at", "2019-07-12 19:31:47.720363"], ["updated_at", "2019-07-12 19:31:47.720363"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCanidate Create (4.3ms)[0m  [1m[32mINSERT INTO "canidates" ("name", "photo", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Joe Biden"], ["photo", "http://img.wennermedia.com/article-leads-vertical-600/joe-biden-c9483892-d69f-4566-a815-15e0abe26b84.jpg"], ["created_at", "2019-07-12 19:31:47.725407"], ["updated_at", "2019-07-12 19:31:47.725407"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mCanidate Create (0.5ms)[0m  [1m[32mINSERT INTO "canidates" ("name", "photo", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Pete Buttigieg"], ["photo", "https://urbanmilwaukee.com/wp-content/uploads/2018/04/Pete_Buttigieg_Official_Portrait.jpg"], ["created_at", "2019-07-12 19:31:47.734406"], ["updated_at", "2019-07-12 19:31:47.734406"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mCanidate Create (0.5ms)[0m  [1m[32mINSERT INTO "canidates" ("name", "photo", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Julian Castro"], ["photo", "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Juli%C3%A1n_Castro%27s_Official_HUD_Portrait.jpg/1200px-Juli%C3%A1n_Castro%27s_Official_HUD_Portrait.jpg"], ["created_at", "2019-07-12 19:31:47.738977"], ["updated_at", "2019-07-12 19:31:47.738977"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (24.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mCanidate Create (0.5ms)[0m  [1m[32mINSERT INTO "canidates" ("name", "photo", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "John Delaney"], ["photo", "https://bloximages.chicago2.vip.townnews.com/globegazette.com/content/tncms/assets/v3/editorial/7/b7/7b7f5369-e20b-5d6a-a3cb-da4c2fbcc03e/5b327a37f132d.image.jpg?resize=1200%2C1278"], ["created_at", "2019-07-12 19:31:47.768087"], ["updated_at", "2019-07-12 19:31:47.768087"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mCanidate Create (0.5ms)[0m  [1m[32mINSERT INTO "canidates" ("name", "photo", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Tulsi Gabbard"], ["photo", "https://upload.wikimedia.org/wikipedia/commons/e/ed/Tulsi_Gabbard%2C_official_portrait%2C_113th_Congress_%28cropped%29.jpg"], ["created_at", "2019-07-12 19:31:47.772808"], ["updated_at", "2019-07-12 19:31:47.772808"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mCanidate Create (0.5ms)[0m  [1m[32mINSERT INTO "canidates" ("name", "photo", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Kirsten Gillibrand"], ["photo", "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Kirsten_Gillibrand%2C_official_portrait%2C_112th_Congress.jpg/1200px-Kirsten_Gillibrand%2C_official_portrait%2C_112th_Congress.jpg"], ["created_at", "2019-07-12 19:31:47.777599"], ["updated_at", "2019-07-12 19:31:47.777599"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mCanidate Create (0.5ms)[0m  [1m[32mINSERT INTO "canidates" ("name", "photo", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "John Hickenlooper"], ["photo", "https://uploads.concordia.net/2018/08/21172532/John-Hickenlooper.jpg"], ["created_at", "2019-07-12 19:31:47.782090"], ["updated_at", "2019-07-12 19:31:47.782090"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mCanidate Create (0.6ms)[0m  [1m[32mINSERT INTO "canidates" ("name", "photo", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Jay Inslee"], ["photo", "http://www.governor.wa.gov/sites/default/files/images/Governor%20Jay%20Inslee%20Official%20Portrait.jpg"], ["created_at", "2019-07-12 19:31:47.787447"], ["updated_at", "2019-07-12 19:31:47.787447"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mCanidate Create (0.5ms)[0m  [1m[32mINSERT INTO "canidates" ("name", "photo", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Amy Klobuchar"], ["photo", "https://upload.wikimedia.org/wikipedia/commons/f/f9/Amy_Klobuchar.jpg"], ["created_at", "2019-07-12 19:31:47.792304"], ["updated_at", "2019-07-12 19:31:47.792304"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mCanidate Create (0.5ms)[0m  [1m[32mINSERT INTO "canidates" ("name", "photo", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Wayne Messam"], ["photo", "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Mayor_Messam.jpg/1200px-Mayor_Messam.jpg"], ["created_at", "2019-07-12 19:31:47.797362"], ["updated_at", "2019-07-12 19:31:47.797362"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mCanidate Create (0.5ms)[0m  [1m[32mINSERT INTO "canidates" ("name", "photo", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Beto O Rourke"], ["photo", "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Beto_O%27Rourke%2C_Official_portrait%2C_113th_Congress.jpg/1200px-Beto_O%27Rourke%2C_Official_portrait%2C_113th_Congress.jpg"], ["created_at", "2019-07-12 19:31:47.802025"], ["updated_at", "2019-07-12 19:31:47.802025"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCanidate Create (0.5ms)[0m  [1m[32mINSERT INTO "canidates" ("name", "photo", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Tim Ryan"], ["photo", "https://upload.wikimedia.org/wikipedia/commons/6/6d/Rep._Tim_Ryan_Congressional_Head_Shot_2010.jpg"], ["created_at", "2019-07-12 19:31:47.806801"], ["updated_at", "2019-07-12 19:31:47.806801"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mCanidate Create (0.5ms)[0m  [1m[32mINSERT INTO "canidates" ("name", "photo", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Bernie Sanders"], ["photo", "http://networthcelebrities.com/wp-content/uploads/2015/11/Bernie-Sanders_6.jpg"], ["created_at", "2019-07-12 19:31:47.811635"], ["updated_at", "2019-07-12 19:31:47.811635"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mCanidate Create (0.5ms)[0m  [1m[32mINSERT INTO "canidates" ("name", "photo", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Eric Swalwell"], ["photo", "https://swalwell.house.gov/sites/swalwell.house.gov/files/wysiwyg_uploaded/ES%20Official%20Photo%20114th.jpg"], ["created_at", "2019-07-12 19:31:47.816026"], ["updated_at", "2019-07-12 19:31:47.816026"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mCanidate Create (0.5ms)[0m  [1m[32mINSERT INTO "canidates" ("name", "photo", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Elizabeth Warren"], ["photo", "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Elizabeth_Warren%2C_official_portrait%2C_114th_Congress.jpg/1200px-Elizabeth_Warren%2C_official_portrait%2C_114th_Congress.jpg"], ["created_at", "2019-07-12 19:31:47.820691"], ["updated_at", "2019-07-12 19:31:47.820691"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mCanidate Create (0.5ms)[0m  [1m[32mINSERT INTO "canidates" ("name", "photo", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Marianne Williamson"], ["photo", "https://pbs.twimg.com/profile_images/859507720814305281/nTvKAGL6_400x400.jpg"], ["created_at", "2019-07-12 19:31:47.825269"], ["updated_at", "2019-07-12 19:31:47.825269"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCanidate Create (0.5ms)[0m  [1m[32mINSERT INTO "canidates" ("name", "photo", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Andrew Yang"], ["photo", "https://cdn.vox-cdn.com/thumbor/OI8ULB1VpTqL4HmFz0yh1j60WR0=/0x0:2040x1360/1200x675/filters:focal(857x517:1183x843)/cdn.vox-cdn.com/uploads/chorus_image/image/63572227/akrales_190411_3346_0152.0.jpg"], ["created_at", "2019-07-12 19:31:47.829732"], ["updated_at", "2019-07-12 19:31:47.829732"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (6.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "canidates"[0m
+  ↳ db/seeds.rb:29
+Started GET "/canidates" for ::1 at 2019-07-12 15:31:57 -0400
+Processing by CanidatesController#index as HTML
+  [1m[36mCanidate Load (0.8ms)[0m  [1m[34mSELECT "canidates".* FROM "canidates"[0m
+  ↳ app/controllers/canidates_controller.rb:8
+Completed 200 OK in 78ms (Views: 19.4ms | ActiveRecord: 58.0ms)
+
+
+Started GET "/canidates" for ::1 at 2019-07-12 15:32:35 -0400
+Processing by CanidatesController#index as HTML
+  [1m[36mCanidate Load (0.6ms)[0m  [1m[34mSELECT "canidates".* FROM "canidates"[0m
+  ↳ app/controllers/canidates_controller.rb:8
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/canidates" for ::1 at 2019-07-12 15:32:41 -0400
+Processing by CanidatesController#index as HTML
+  [1m[36mCanidate Load (0.9ms)[0m  [1m[34mSELECT "canidates".* FROM "canidates"[0m
+  ↳ app/controllers/canidates_controller.rb:8
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/canidates" for ::1 at 2019-07-12 15:32:59 -0400
+Processing by CanidatesController#index as HTML
+  [1m[36mCanidate Load (2.3ms)[0m  [1m[34mSELECT "canidates".* FROM "canidates"[0m
+  ↳ app/controllers/canidates_controller.rb:8
+Completed 200 OK in 8ms (Views: 5.0ms | ActiveRecord: 2.3ms)
+
+
