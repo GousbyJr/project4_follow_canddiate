@@ -40,6 +40,7 @@ class SignUpForm extends Component {
   }
 
   render() {
+    console.log('signup')
     return (
       <div className="register-container">
         <h2>Sign Up</h2>

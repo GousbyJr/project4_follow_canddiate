@@ -16,6 +16,7 @@ class SignIn extends Component {
   };
 
   render() {
+    console.log('hi')
     return (
         <div className="auth-container">
         <h2>Sign In</h2>
@@ -27,24 +28,18 @@ class SignIn extends Component {
             // this.props.history.push('/home')
           }}
         >
-          <placeholder>Username:</placeholder>
+          <label>Username:</label>
           <input
             name="username"
             type="text"
             value={this.state.username}
             onChange={this.handleChange}
           />
-            <placeholder>Email:</placeholder>
-          <input
-            name="email"
-            type="email"
-            value={this.state.email}
-            onChange={this.handleChange}
-          />
-          <placeholder>Password:</placeholder>
+            
+          <label>Password:</label>
           <input
             name="password"
-            type="password"
+            type="text"
             value={this.state.password}
             onChange={this.handleChange}
           />

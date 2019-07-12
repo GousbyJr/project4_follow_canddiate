@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link, Switch, Redirect } from "react-router-dom";
-import decode from 'jwt-decode';
 import "./App.css";
 import SignUp from './Components/SignUp';
 import AllCanidates from './Components/AllCanidates';
@@ -10,6 +9,7 @@ import SignIn from './Components/SignIn'
 import AddNewCanidate from './Components/AddNewCanidate';
 
 import axios from 'axios';
+import decode from 'jwt-decode';
 
 class App extends Component {
   state = {
@@ -31,7 +31,7 @@ class App extends Component {
   }
 
   handleLogin = async (data)=> {
-    const res = await axios.post('http://localhost:3001/auth/login', data)
+    const res = await axios.post('http://localhost:3000/auth/login', data)
     // 2. Retrieve token from response object
     const {token} = res.data
     // 3. save token to local storage at key 'jwt'
@@ -64,7 +64,7 @@ class App extends Component {
 
   handleSignUp = async  (data)=> {
     // 1. submit form data to the appropriate endpoint
-    const res = await axios.post('http://localhost:3001/users', data)
+    const res = await axios.post('http://localhost:3000/users', data)
     // 2. Retrieve token from response object
     const {token} = res.data
     // 3. save token to local storage at key 'jwt'
@@ -77,15 +77,7 @@ class App extends Component {
 
   }
 
-  authHandleChange(e) {
-    const { name, value } = e.target;
-    this.setState(prevState => ({
-      authFormData: {
-        ...prevState.authFormData,
-        [name]: value
-      }
-    }));
-  }
+  
 
   render() {
     const {currentUser} = this.state;
@@ -93,113 +85,40 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
+        {this.state.redirectToLogin && <Redirect to='/signin'/>}
         <header>
-        <div></div>
-        <h1><Link to='/allcanidates' onClick={() => this.setState({
-          canidateBio: {
-            name: "",
-            politicalParty: "",
-            photo: "",
-            bio: ""
-          }
-        })}>iCanidate</Link></h1>
+        {userIsLoggedIn ?<a  onClick={this.handleLogout}> Log Out <Link to='localhost:3000/logout'>Sign Out</Link>  </a> : <nav> <Link to='/signup'>Sign Up</Link> <Link to='/signin'>Log in</Link></nav> }
+        <div>{currentUser.user_id && `Hello ${currentUser.username}`}</div>
         <div>
-        {this.state.currentUser
-        ?
-        <div>
-          <p>{this.state.currentUser.username}</p>
-          <button onClick={this.handleLogout}>Sign Out</button>
-          </div>
-          :
-          <div>
-          <button onClick={this.handleLoginButton}>Sign In</button>
-          <button onClick={this.handleRegister}>Register</button>
-           </div>
-        }
+        <h1>
+        <Link 
+        to="/allcanidates" 
+        // onClick={() => 
+        // this.setState({
+        //   canidateBio: {
+        //     name: "",
+        //     politicalParty: "",
+        //     photo: "",
+        //     bio: ""
+        //   }
+        // })
+        // }
+        >
+        iCanidate
+        </Link>
+        </h1>
         </div>
-      </header>
-      <Route exact path="/" render={()=> (
-        <SignIn
-          handleLogin={this.handleLogin}
-          handleChange={this.authHandleChange}
-          formData={this.state.authFormData} />)} />
-
-        <Route 
-        exact path="/signup" render={() => (
-          <SignUp
-            handleRegister={this.handleRegister}
-            handleChange={this.authHandleChange}
-            formData={this.state.authFormData} />)} />
-
-          <Route
-          exact path="/canidates"
-          render={() => (
-            <AllCanidates
-              canidates={this.state.canidates}
-              canidateBio={this.state.canidateBio}
-              handleFormChange={this.handleFormChange}
-              newCanidate={this.newCanidate} />
-          )}
-        />
-          <Route
-          path="/new/canidate"
-          render={() => (
-            < AddNewCanidate
-              handleFormChange={this.handleFormChange}
-              canidateBio={this.state.canidateBio}
-              newCanidate={this.newCanidate} />
-          )} />
-       <Route
-          path="/canidates/:id"
-          render={(props) => {
-            const { id } = props.match.params;
-            const canidate = this.state.canidates.find(el => el.id === parseInt(id));
-            return <OneCanidate
-              id={id}
-              canidate={canidate}
-              handleFormChange={this.handleFormChange}
-              mountEditForm={this.mountEditForm}
-              canidateBio={this.state.canidateBio}
-              deleteCanidate={this.deleteCanidate} />
-          }}
-        />
-
-    {userIsLoggedIn && <Redirect to='/home'/> } 
-
-
-          <header>
-            
-{userIsLoggedIn ? 
-<div onClick={this.handleLogout}> Log Out </div> : 
-<nav> <Link to='/signup'>Sign Up</Link> <br></br><Link to='/login'>Sign in</Link></nav> }         
-
-   <div> {currentUser.user_id && `Hello ${currentUser.username}`} </div>
-            <h1>
-              <Link
-                to="/"
-                onClick={() =>
-                  this.setState({
-                    canidateBio: {
-                      name: "",
-                      photo: ""
-                    }
-                  })
-                }
-              >
-               
-              </Link>
-            </h1>
-          </header>
-          <Switch>
-            <Route exact path="/signin" render={(props) => <SignIn {...props} handleLogin={this.handleLogin} />} />
-            <Route exact path="/signup" render={() => <SignUp handleSignUp={this.handleSignUp} />} />
-            <Route exact path= '/home' render={()=> <div> this is the homepage </div>} />
-
-          </Switch>
+        </header>
+        <Switch>
+          <Route exact path="/signin" render={() => <SignIn handleLogin={this.handleLogin} />} />
+          <Route exact path="/signup" render={() => <SignUp handleSignUp={this.handleSignUp} />} />
+        </Switch>
         </div>
-      </Router>
+        
+        </Router>
     );
   }
 }
+
 
 export default App;

@@ -18,8 +18,8 @@ header {
   text-align: center;
   padding: 2rem;
   position: fixed;
-  width: 100%;
   top: 0;
+  height: 100px;
   display: flex;
   justify-content: space-between;
 }
@@ -37,6 +37,11 @@ header>div>button, p {
   margin: 8rem 30rem;
   color: aliceblue;
   padding: 2rem;
+}
+
+.app{
+  text-align: center;
+  color: white;
 }
 .register-container {
   margin: 8rem 30rem;

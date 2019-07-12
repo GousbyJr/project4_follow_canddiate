@@ -7,18 +7,22 @@ class  AllCanidates extends Component {
         super(props);
         
         this.state = {
-            canidatesArray: []
+            Canidate:[] ,
+            Canidate_name: []
+
         };
     }
     
     async componentDidMount() {
-        const response = await axios.get("/canidates");
-        const canidatesArray = response.data.canidates;
+        const response = await axios.get("/allcanidates");
+        const canidate = response.data.canidate;
         this.setState({
-          canidatesArray
+          
         });
       }
 render () {
+    console.log();
+    
   return (
     <div className="canidates-container">
       {this.state.canidatesArray.map(canidate => (

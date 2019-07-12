@@ -10,3 +10,5 @@ class JsonWebToken
       decoded = JWT.decode(token, SECRET_KEY)[0]
       HashWithIndifferentAccess.new decoded
     end
+
+  end
