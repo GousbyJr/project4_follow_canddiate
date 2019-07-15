@@ -31,7 +31,7 @@ class App extends Component {
   }
 
   handleLogin = async (data)=> {
-    const res = await axios.post('http://localhost:3000/auth/login', data)
+    const res = await axios.post('/auth/login', data)
     // 2. Retrieve token from response object
     const {token} = res.data
     // 3. save token to local storage at key 'jwt'
@@ -64,7 +64,7 @@ class App extends Component {
 
   handleSignUp = async  (data)=> {
     // 1. submit form data to the appropriate endpoint
-    const res = await axios.post('http://localhost:3000/users', data)
+    const res = await axios.post('/users', data)
     // 2. Retrieve token from response object
     const {token} = res.data
     // 3. save token to local storage at key 'jwt'
@@ -87,8 +87,8 @@ class App extends Component {
         <div className="App">
         {this.state.redirectToLogin && <Redirect to='/signin'/>}
         <header>
-        {userIsLoggedIn ?<Link onClick = {this.handleLogout} to='localhost:3000/logout'>Sign Out</Link> : <nav> <Link to='/signup'>Sign Up</Link> <Link to='/signin'>Log in</Link></nav> }
-        <div className="username">{currentUser.user_id && `Hello ${currentUser.username}`}</div>
+        {userIsLoggedIn ?<Link onClick = {this.handleLogout} to='/logout'>Sign Out</Link> : <nav> <Link to='/signup'>Sign Up</Link> <Link to='/signin'>Log in</Link></nav> }
+        <div className="username">{currentUser.user_id && `Welcome ${currentUser.username}`}</div>
         <div className="title">
         <h1>
         <Link 

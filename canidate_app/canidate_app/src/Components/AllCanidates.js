@@ -15,7 +15,7 @@ class  AllCanidates extends Component {
     }
     
     async componentDidMount() {
-        const response = await axios.get("http://localhost:3000/canidates");
+        const response = await axios.get("/canidates");
         const canidate = response.data;
         console.log(canidate)
         this.setState({
@@ -29,10 +29,10 @@ render () {
     <div className="candidates-container">
       {this.state.Canidate.map(canidate => (
         <div
-        <Link className="link"
-              to={`/candidate/${canidate.categoryId}/workout/${workout.id}/edit`}
+        <Link className="link">
+              to={`/candidate/${canidate.categoryId}/candidate/${canidate.id}/edit`}
             >
-              <h3 className="workout-name">{workout.name}</h3>
+              <h3 className="canidate-name">{canidate.name}</h3>
               </Link>
           }}>
           <img alt={canidate.name } alt={canidate.bio} src={canidate.photo} />
@@ -53,6 +53,6 @@ render () {
       </div>
     </div>
   )
-}
-}
+
+
 export default AllCanidates;
