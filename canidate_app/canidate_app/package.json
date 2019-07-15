@@ -2,6 +2,7 @@
   "name": "canidate_app",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:3001",
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -9,11 +10,10 @@
   },
   "scripts": {
     "start": "PORT=3001 react-scripts start",
-    "build": "cd client && npm install && npm run build && cd ..",
-  "deploy": "cp -a client/build/. public/",
-  "postinstall": "npm run build && npm run deploy && echo 'Client built!'",
-  "proxy": "http://localhost:3001"
-},
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
   "eslintConfig": {
     "extends": "react-app"
   },
