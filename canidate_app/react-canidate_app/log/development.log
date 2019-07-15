@@ -596,3 +596,283 @@ Processing by CanidatesController#index as HTML
 Completed 200 OK in 8ms (Views: 5.0ms | ActiveRecord: 2.3ms)
 
 
+Started GET "/canidates" for ::1 at 2019-07-12 15:37:34 -0400
+Processing by CanidatesController#index as HTML
+  [1m[36mCanidate Load (0.4ms)[0m  [1m[34mSELECT "canidates".* FROM "canidates"[0m
+  ↳ app/controllers/canidates_controller.rb:8
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/canidates" for ::1 at 2019-07-12 15:37:55 -0400
+Processing by CanidatesController#index as HTML
+  [1m[36mCanidate Load (3.5ms)[0m  [1m[34mSELECT "canidates".* FROM "canidates"[0m
+  ↳ app/controllers/canidates_controller.rb:8
+Completed 200 OK in 15ms (Views: 11.2ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/canidates" for ::1 at 2019-07-12 16:03:27 -0400
+Processing by CanidatesController#index as HTML
+  [1m[36mCanidate Load (0.8ms)[0m  [1m[34mSELECT "canidates".* FROM "canidates"[0m
+  ↳ app/controllers/canidates_controller.rb:8
+Completed 200 OK in 26ms (Views: 23.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/canidates" for ::1 at 2019-07-12 16:05:53 -0400
+Processing by CanidatesController#index as HTML
+  [1m[36mCanidate Load (0.9ms)[0m  [1m[34mSELECT "canidates".* FROM "canidates"[0m
+  ↳ app/controllers/canidates_controller.rb:8
+Completed 200 OK in 19ms (Views: 17.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/canidates" for ::1 at 2019-07-12 16:15:53 -0400
+Processing by CanidatesController#index as HTML
+  [1m[36mCanidate Load (2.8ms)[0m  [1m[34mSELECT "canidates".* FROM "canidates"[0m
+  ↳ app/controllers/canidates_controller.rb:8
+Completed 200 OK in 18ms (Views: 14.8ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/canidates" for ::1 at 2019-07-12 16:17:13 -0400
+Processing by CanidatesController#index as HTML
+  [1m[36mCanidate Load (1.6ms)[0m  [1m[34mSELECT "canidates".* FROM "canidates"[0m
+  ↳ app/controllers/canidates_controller.rb:8
+Completed 200 OK in 15ms (Views: 12.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/canidates" for ::1 at 2019-07-12 16:20:16 -0400
+Processing by CanidatesController#index as HTML
+  [1m[36mCanidate Load (1.2ms)[0m  [1m[34mSELECT "canidates".* FROM "canidates"[0m
+  ↳ app/controllers/canidates_controller.rb:8
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/canidates" for ::1 at 2019-07-12 16:20:57 -0400
+Processing by CanidatesController#index as HTML
+  [1m[36mCanidate Load (12.8ms)[0m  [1m[34mSELECT "canidates".* FROM "canidates"[0m
+  ↳ app/controllers/canidates_controller.rb:8
+Completed 200 OK in 23ms (Views: 9.5ms | ActiveRecord: 12.8ms)
+
+
+Started GET "/canidates" for ::1 at 2019-07-12 16:21:36 -0400
+Processing by CanidatesController#index as HTML
+  [1m[36mCanidate Load (30.6ms)[0m  [1m[34mSELECT "canidates".* FROM "canidates"[0m
+  ↳ app/controllers/canidates_controller.rb:8
+Completed 200 OK in 44ms (Views: 13.1ms | ActiveRecord: 30.6ms)
+
+
+Started GET "/canidates" for ::1 at 2019-07-12 16:24:51 -0400
+Processing by CanidatesController#index as HTML
+  [1m[36mCanidate Load (2.4ms)[0m  [1m[34mSELECT "canidates".* FROM "canidates"[0m
+  ↳ app/controllers/canidates_controller.rb:8
+Completed 200 OK in 14ms (Views: 11.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/canidates" for ::1 at 2019-07-12 16:27:35 -0400
+Processing by CanidatesController#index as HTML
+  [1m[36mCanidate Load (2.2ms)[0m  [1m[34mSELECT "canidates".* FROM "canidates"[0m
+  ↳ app/controllers/canidates_controller.rb:8
+Completed 200 OK in 55ms (Views: 52.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/canidates" for ::1 at 2019-07-12 16:27:50 -0400
+Processing by CanidatesController#index as HTML
+  [1m[36mCanidate Load (0.3ms)[0m  [1m[34mSELECT "canidates".* FROM "canidates"[0m
+  ↳ app/controllers/canidates_controller.rb:8
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/canidates" for ::1 at 2019-07-12 16:27:54 -0400
+Processing by CanidatesController#index as HTML
+  [1m[36mCanidate Load (12.1ms)[0m  [1m[34mSELECT "canidates".* FROM "canidates"[0m
+  ↳ app/controllers/canidates_controller.rb:8
+Completed 200 OK in 21ms (Views: 8.2ms | ActiveRecord: 12.1ms)
+
+
+Started GET "/canidates" for ::1 at 2019-07-12 16:27:58 -0400
+Processing by CanidatesController#index as HTML
+  [1m[36mCanidate Load (0.4ms)[0m  [1m[34mSELECT "canidates".* FROM "canidates"[0m
+  ↳ app/controllers/canidates_controller.rb:8
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/canidates" for ::1 at 2019-07-12 16:29:31 -0400
+Processing by CanidatesController#index as HTML
+  [1m[36mCanidate Load (38.2ms)[0m  [1m[34mSELECT "canidates".* FROM "canidates"[0m
+  ↳ app/controllers/canidates_controller.rb:8
+Completed 200 OK in 49ms (Views: 10.7ms | ActiveRecord: 38.2ms)
+
+
+Started GET "/canidates" for ::1 at 2019-07-12 16:30:18 -0400
+Processing by CanidatesController#index as HTML
+  [1m[36mCanidate Load (84.8ms)[0m  [1m[34mSELECT "canidates".* FROM "canidates"[0m
+  ↳ app/controllers/canidates_controller.rb:8
+Completed 200 OK in 97ms (Views: 11.7ms | ActiveRecord: 84.8ms)
+
+
+Started GET "/canidates" for ::1 at 2019-07-12 16:30:20 -0400
+Processing by CanidatesController#index as HTML
+  [1m[36mCanidate Load (5.2ms)[0m  [1m[34mSELECT "canidates".* FROM "canidates"[0m
+  ↳ app/controllers/canidates_controller.rb:8
+Completed 200 OK in 16ms (Views: 10.2ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/canidates" for ::1 at 2019-07-12 16:30:22 -0400
+Processing by CanidatesController#index as HTML
+  [1m[36mCanidate Load (0.3ms)[0m  [1m[34mSELECT "canidates".* FROM "canidates"[0m
+  ↳ app/controllers/canidates_controller.rb:8
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/canidates" for ::1 at 2019-07-12 16:30:25 -0400
+Processing by CanidatesController#index as HTML
+  [1m[36mCanidate Load (26.1ms)[0m  [1m[34mSELECT "canidates".* FROM "canidates"[0m
+  ↳ app/controllers/canidates_controller.rb:8
+Completed 200 OK in 34ms (Views: 7.8ms | ActiveRecord: 26.1ms)
+
+
+Started GET "/canidates" for ::1 at 2019-07-12 16:32:18 -0400
+Processing by CanidatesController#index as HTML
+  [1m[36mCanidate Load (152.0ms)[0m  [1m[34mSELECT "canidates".* FROM "canidates"[0m
+  ↳ app/controllers/canidates_controller.rb:8
+Completed 200 OK in 160ms (Views: 7.4ms | ActiveRecord: 152.0ms)
+
+
+Started GET "/canidates" for ::1 at 2019-07-12 16:32:41 -0400
+Processing by CanidatesController#index as HTML
+  [1m[36mCanidate Load (10.5ms)[0m  [1m[34mSELECT "canidates".* FROM "canidates"[0m
+  ↳ app/controllers/canidates_controller.rb:8
+Completed 200 OK in 21ms (Views: 9.8ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/canidates" for ::1 at 2019-07-14 14:56:32 -0400
+Processing by CanidatesController#index as HTML
+  [1m[36mCanidate Load (42.2ms)[0m  [1m[34mSELECT "canidates".* FROM "canidates"[0m
+  ↳ app/controllers/canidates_controller.rb:8
+Completed 200 OK in 78ms (Views: 33.1ms | ActiveRecord: 42.2ms)
+
+
+Started GET "/canidates" for ::1 at 2019-07-14 14:56:44 -0400
+Processing by CanidatesController#index as HTML
+  [1m[36mCanidate Load (1.3ms)[0m  [1m[34mSELECT "canidates".* FROM "canidates"[0m
+  ↳ app/controllers/canidates_controller.rb:8
+Completed 200 OK in 28ms (Views: 26.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/canidates" for ::1 at 2019-07-14 14:56:57 -0400
+Processing by CanidatesController#index as HTML
+  [1m[36mCanidate Load (0.3ms)[0m  [1m[34mSELECT "canidates".* FROM "canidates"[0m
+  ↳ app/controllers/canidates_controller.rb:8
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/canidates" for ::1 at 2019-07-14 14:58:48 -0400
+Processing by CanidatesController#index as HTML
+  [1m[36mCanidate Load (0.4ms)[0m  [1m[34mSELECT "canidates".* FROM "canidates"[0m
+  ↳ app/controllers/canidates_controller.rb:8
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/canidates" for ::1 at 2019-07-14 15:00:33 -0400
+Processing by CanidatesController#index as HTML
+  [1m[36mCanidate Load (1.6ms)[0m  [1m[34mSELECT "canidates".* FROM "canidates"[0m
+  ↳ app/controllers/canidates_controller.rb:8
+Completed 200 OK in 16ms (Views: 14.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/canidates" for ::1 at 2019-07-14 15:12:34 -0400
+Processing by CanidatesController#index as HTML
+  [1m[36mCanidate Load (0.7ms)[0m  [1m[34mSELECT "canidates".* FROM "canidates"[0m
+  ↳ app/controllers/canidates_controller.rb:8
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/canidates" for ::1 at 2019-07-14 15:24:58 -0400
+Processing by CanidatesController#index as HTML
+  [1m[36mCanidate Load (0.8ms)[0m  [1m[34mSELECT "canidates".* FROM "canidates"[0m
+  ↳ app/controllers/canidates_controller.rb:8
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/canidates" for ::1 at 2019-07-14 15:27:18 -0400
+Processing by CanidatesController#index as HTML
+  [1m[36mCanidate Load (0.4ms)[0m  [1m[34mSELECT "canidates".* FROM "canidates"[0m
+  ↳ app/controllers/canidates_controller.rb:8
+Completed 200 OK in 19ms (Views: 17.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/canidates" for ::1 at 2019-07-14 15:30:51 -0400
+Processing by CanidatesController#index as HTML
+  [1m[36mCanidate Load (0.5ms)[0m  [1m[34mSELECT "canidates".* FROM "canidates"[0m
+  ↳ app/controllers/canidates_controller.rb:8
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/canidates" for ::1 at 2019-07-14 15:47:44 -0400
+Processing by CanidatesController#index as HTML
+  [1m[36mCanidate Load (0.9ms)[0m  [1m[34mSELECT "canidates".* FROM "canidates"[0m
+  ↳ app/controllers/canidates_controller.rb:8
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/canidates" for ::1 at 2019-07-14 15:48:15 -0400
+Processing by CanidatesController#index as HTML
+  [1m[36mCanidate Load (0.5ms)[0m  [1m[34mSELECT "canidates".* FROM "canidates"[0m
+  ↳ app/controllers/canidates_controller.rb:8
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/canidates" for ::1 at 2019-07-14 15:48:45 -0400
+Processing by CanidatesController#index as HTML
+  [1m[36mCanidate Load (0.4ms)[0m  [1m[34mSELECT "canidates".* FROM "canidates"[0m
+  ↳ app/controllers/canidates_controller.rb:8
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/canidates" for ::1 at 2019-07-14 15:52:00 -0400
+Processing by CanidatesController#index as HTML
+  [1m[36mCanidate Load (0.8ms)[0m  [1m[34mSELECT "canidates".* FROM "canidates"[0m
+  ↳ app/controllers/canidates_controller.rb:8
+Completed 200 OK in 20ms (Views: 18.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/canidates" for ::1 at 2019-07-14 15:52:04 -0400
+Processing by CanidatesController#index as HTML
+  [1m[36mCanidate Load (6.2ms)[0m  [1m[34mSELECT "canidates".* FROM "canidates"[0m
+  ↳ app/controllers/canidates_controller.rb:8
+Completed 200 OK in 22ms (Views: 14.5ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/canidates" for ::1 at 2019-07-14 15:52:28 -0400
+Processing by CanidatesController#index as HTML
+  [1m[36mCanidate Load (1.5ms)[0m  [1m[34mSELECT "canidates".* FROM "canidates"[0m
+  ↳ app/controllers/canidates_controller.rb:8
+Completed 200 OK in 26ms (Views: 23.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/canidates" for ::1 at 2019-07-14 15:52:41 -0400
+Processing by CanidatesController#index as HTML
+  [1m[36mCanidate Load (1.0ms)[0m  [1m[34mSELECT "canidates".* FROM "canidates"[0m
+  ↳ app/controllers/canidates_controller.rb:8
+Completed 200 OK in 18ms (Views: 16.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/canidates" for ::1 at 2019-07-14 15:53:08 -0400
+Processing by CanidatesController#index as HTML
+  [1m[36mCanidate Load (0.7ms)[0m  [1m[34mSELECT "canidates".* FROM "canidates"[0m
+  ↳ app/controllers/canidates_controller.rb:8
+Completed 200 OK in 20ms (Views: 18.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/canidates" for ::1 at 2019-07-14 15:55:59 -0400
+Processing by CanidatesController#index as HTML
+  [1m[36mCanidate Load (3.1ms)[0m  [1m[34mSELECT "canidates".* FROM "canidates"[0m
+  ↳ app/controllers/canidates_controller.rb:8
+Completed 200 OK in 28ms (Views: 23.7ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/canidates" for ::1 at 2019-07-14 15:56:22 -0400
+Processing by CanidatesController#index as HTML
+  [1m[36mCanidate Load (12.5ms)[0m  [1m[34mSELECT "canidates".* FROM "canidates"[0m
+  ↳ app/controllers/canidates_controller.rb:8
+Completed 200 OK in 32ms (Views: 19.0ms | ActiveRecord: 12.5ms)
+
+

@@ -1,35 +1,48 @@
-body{
+body {
   text-align: center;
   background-image: url("https://i.ytimg.com/vi/mMKyZntMxBo/maxresdefault.jpg");
-  
-height: 100vh;
+  height: 100vh;
 }
 
-h1{
-  margin: 0;
+h1 {
+  margin: 0 auto;
   text-align: center;
-  border: 1px solid black;
   padding: 5rem;
-}  
+  position: top;
+}
 
+.title{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
 
 header {
   font-family: 'Permanent Marker', cursive;
-  text-align: center;
+  text-align: right;
   padding: 2rem;
-  position: fixed;
+  position: top;
   top: 0;
   height: 100px;
-  display: flex;
-  justify-content: space-between;
+  
 }
 
-header>h1>a {
+header>h1>a{
+  text-align: center;
   text-decoration: none;
   cursor: pointer;
+  margin-top: auto;
+  
 }
 
-header>div>button, p {
+.username{
+  margin-left: auto;
+  color: aliceblue;
+}
+
+header>div>button,
+p {
   margin: 0 3rem;
 }
 
@@ -39,10 +52,11 @@ header>div>button, p {
   padding: 2rem;
 }
 
-.app{
+.app {
   text-align: center;
   color: white;
 }
+
 .register-container {
   margin: 8rem 30rem;
   color: aliceblue;
@@ -58,10 +72,10 @@ html {
   grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
   grid-gap: 10px;
   margin: 8rem 10rem;
-  background-image: url(https://cdn01.dailycaller.com/wp-content/uploads/2019/05/2020-candidates.jpg);
 }
+
 .canidate-card {
-  background: #d6d6d6;
+  color: aliceblue;
   cursor: pointer;
 }
 
@@ -96,6 +110,7 @@ img {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

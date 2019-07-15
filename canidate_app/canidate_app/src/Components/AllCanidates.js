@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 import axios from "axios"
 
+
 class  AllCanidates extends Component {
     constructor(props) {
         super(props);
@@ -14,44 +15,41 @@ class  AllCanidates extends Component {
     }
     
     async componentDidMount() {
-        const response = await axios.get("/allcanidates");
-        const canidate = response.data.canidate;
+        const response = await axios.get("http://localhost:3000/canidates");
+        const canidate = response.data;
+        console.log(canidate)
         this.setState({
-          
+          Candidate: canidate
         });
       }
 render () {
     console.log();
     
   return (
-    <div className="canidates-container">
-      {this.state.canidatesArray.map(canidate => (
+    <div className="candidates-container">
+      {this.state.Canidate.map(canidate => (
         <div
-          key={canidate.id}
-          className="canidate-card"
-          onClick={() => {
-            this.state.history.push(`/canidates/${canidate.id}`);
-            window.scrollTo(0, 0);
-            
-          
+        <Link className="link"
+              to={`/candidate/${canidate.categoryId}/workout/${workout.id}/edit`}
+            >
+              <h3 className="workout-name">{workout.name}</h3>
+              </Link>
           }}>
-          <img alt={canidate.name} src={canidate.photo} />
-          <h3>
-            <p>{canidate.name}</p>
-          </h3>
+          <img alt={canidate.name } alt={canidate.bio} src={canidate.photo} />
+           <p></p> 
+        
         </div>
       ))}
       <div
-        className="canidate-card"
+        className="candidate-card"
         onClick={() => {
-          this.state.history.push('/new/canidate');
+          this.state.history.push('/new/candidate');
           window.scrollTo(0, 0);
         }}>
         <img
-          alt="Add a new canidate"
-          src="#"
+          alt="Add a new candidate"
           className="plus-sign" />
-        <h3>Add a new Canidate</h3>
+        <h3>Add a new Candidate</h3>
       </div>
     </div>
   )

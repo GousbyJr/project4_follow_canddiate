@@ -87,9 +87,9 @@ class App extends Component {
         <div className="App">
         {this.state.redirectToLogin && <Redirect to='/signin'/>}
         <header>
-        {userIsLoggedIn ?<a  onClick={this.handleLogout}> Log Out <Link to='localhost:3000/logout'>Sign Out</Link>  </a> : <nav> <Link to='/signup'>Sign Up</Link> <Link to='/signin'>Log in</Link></nav> }
-        <div>{currentUser.user_id && `Hello ${currentUser.username}`}</div>
-        <div>
+        {userIsLoggedIn ?<Link onClick = {this.handleLogout} to='localhost:3000/logout'>Sign Out</Link> : <nav> <Link to='/signup'>Sign Up</Link> <Link to='/signin'>Log in</Link></nav> }
+        <div className="username">{currentUser.user_id && `Hello ${currentUser.username}`}</div>
+        <div className="title">
         <h1>
         <Link 
         to="/allcanidates" 
@@ -112,6 +112,7 @@ class App extends Component {
         <Switch>
           <Route exact path="/signin" render={() => <SignIn handleLogin={this.handleLogin} />} />
           <Route exact path="/signup" render={() => <SignUp handleSignUp={this.handleSignUp} />} />
+          <Route exact path="/allcanidates" render={() => <AllCanidates  />} />
         </Switch>
         </div>
         
