@@ -68,7 +68,7 @@ html {
 }
 
 .canidates-container {
-  display: grid;
+  display: inline-table;
   grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
   grid-gap: 10px;
   margin: 8rem 10rem;
@@ -77,6 +77,7 @@ html {
 .canidate-card {
   color: aliceblue;
   cursor: pointer;
+  display: inline-flex;
 }
 
 .canidate-page {

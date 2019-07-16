@@ -1,18 +1,18 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 
 function EditCanidate(props) {
   return (
     <div>
-      <h3>Create a new teacher</h3>
+      <h3>Add new candidate</h3>
       <form onSubmit={props.handleSubmit}>
         <p>Photo Link:</p>
         <input
           type="text"
           name="photo"
-          value={props.teacherForm.photo}
+          value={props.canidateBio.photo}
           onChange={props.handleFormChange} />
-        <p>Teacher's name:</p>
+        <p>Candidate's name:</p>
 
         <input
           type="text"
@@ -25,4 +25,4 @@ function EditCanidate(props) {
   )
 }
 
-export default withRouter(EditCanidate);
+export default EditCanidate;

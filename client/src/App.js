@@ -31,7 +31,7 @@ class App extends Component {
   }
 
   handleLogin = async (data)=> {
-    const res = await axios.post('/auth/login', data)
+    const res = await axios.post('http://localhost:3000/auth/login', data)
     // 2. Retrieve token from response object
     const {token} = res.data
     // 3. save token to local storage at key 'jwt'
@@ -104,7 +104,7 @@ class App extends Component {
         // })
         // }
         >
-        iCanidate
+        iCandidate
         </Link>
         </h1>
         </div>
